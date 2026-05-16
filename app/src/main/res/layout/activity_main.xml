@@ -1,0 +1,235 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- IMAGE DE FOND -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/montagne"
+        android:scaleType="centerCrop"/>
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:textColor="@color/black"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score : 0"
+        android:textSize="22sp"
+        android:textColor="@color/black"/>
+
+    <!-- objectif -->
+    <TextView
+        android:id="@+id/target"
+        android:text="Target : 24"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:layout_margin="20dp"/>
+
+    <!-- zone calcul -->
+    <LinearLayout
+        android:id="@+id/calcZone"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/p1"
+            android:background="@drawable/drop_zone"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/n1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/op1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:textSize="24sp"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/p2"
+            android:background="@drawable/drop_zone"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/n2"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/p3"
+            android:background="@drawable/drop_zone"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/op2"
+            android:textColor="@color/black"
+            android:text="_"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/p4"
+            android:background="@drawable/drop_zone"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/n3"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/p5"
+            android:background="@drawable/drop_zone"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/op3"
+            android:textColor="@color/black"
+            android:text="_"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:id="@+id/n4"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/p6"
+            android:background="@drawable/drop_zone"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <!-- opérateurs en bas -->
+    <LinearLayout
+        android:id="@+id/operatorBar"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <TextView android:text="("
+            android:id="@+id/openparenthesis"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
+        <TextView
+            android:id="@+id/plus"
+            android:textColor="@color/black"
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:padding="20dp"/>
+
+
+
+        <TextView
+            android:id="@+id/minus"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/multiply"
+            android:text="×"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/divide"
+            android:text="÷"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"/>
+        <TextView android:text=")"
+            android:id="@+id/closeparenthesis"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result : 0"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="next"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
+</FrameLayout>
